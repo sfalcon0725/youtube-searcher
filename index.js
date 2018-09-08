@@ -1,4 +1,5 @@
 const YOUTUBE_SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search';
+let res=0;
 
 function getDataFromApi(searchTerm, callback) {
   const query = {
@@ -11,12 +12,14 @@ function getDataFromApi(searchTerm, callback) {
 }
 
 function renderResult(result) {
-  return `
+   return `
     <div>
+      <h1>Result  </h1>
       <h2><a class="js-result-name" href="https://youtu.be/${result.id.videoId}" target="_blank">${result.snippet.title}</a></h2>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/${result.id.videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
   `;
+
 }
 
 function displayYouTubeSearchData(data) {

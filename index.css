@@ -1,18 +1,21 @@
 body {
-    padding-top: 50px;
-    background: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: larger;
-  }
-  
-  main {
-    text-align: center;
-  }
-  
-  h1 {
-    color: red;
-  }
-  
-  h2 {
-    color: white;
-  }
+  padding-top: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: larger;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: black;
+}
+
+label {
+  color: black;
+}
